@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+.schedule-calendar.schedule-calendar__container {
+    padding: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.schedule-calendar .schedule-calendar__dates__container {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start
+}
+
+.schedule-calendar .schedule-calendar__left-arrow__icon,
+.schedule-calendar__right-arrow__icon {
+    width: 22px;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.schedule-calendar .schedule-calendar__date-items__list__container {
+    display: grid;
+    gap: 16px;
+    align-items: center;
+}
+
+.schedule-calendar .schedule-calendar__date-item__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schedule-calendar .schedule-calendar__date-item {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.schedule-calendar .schedule-calendar__date-item .day-name__label {
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.schedule-calendar .schedule-calendar__date-item .date__label {
+    margin: 0px;
+    font-weight: 600;
+}
+
+.schedule-calendar .schedule-calendar__time-items__list__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.schedule-calendar .schedule-calendar__time-item {
+    padding: 8px 3px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #9041ff;
+    color: #9041ff;
+    cursor: pointer;
+}
+
+.schedule-calendar .schedule-calendar__time-item.default:hover {
+    background-color: #9041ff;
+    color: white;
+}
+
+.schedule-calendar .schedule-calendar__time-item.disabled {
+    cursor: no-drop;
+    border-color: #bebfc3;
+    color: #bebfc3;
+    text-decoration: line-through;
+}
+
+.schedule-calendar .schedule-calendar__time-item .time__label {
+    margin: 0;
+    font-size: 14px;
+}
